@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "Diabetes-Obesity Co-Hotspots in Greater Houston"
+type: software
+authors:
+  - family-names: "Ganatra"
+    given-names: "Yash Nirmal"
+    affiliation: "Michael E. DeBakey High School for Health Professions"
+repository-code: "https://github.com/ynganatra/houston-census-tract-analysis"
+license: "MIT"
+date-released: 2026-03-28
