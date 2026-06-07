@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Ganatra"
     given-names: "Yash Nirmal"
-    affiliation: "Michael E. DeBakey High School for Health Professions"
+    affiliation: "Michael E. DeBakey High School for Health Professions, Houston, Texas, USA"
 repository-code: "https://github.com/ynganatra/houston-census-tract-analysis"
 license: "MIT"
 date-released: 2026-03-28
