@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the associated manuscript."
-title: "Diabetes-Obesity Co-Hotspots in Greater Houston Were Associated with Social Vulnerability and Limited Food Access"
+title: "Overlapping Diabetes and Obesity Burden in Greater Houston Was Associated With Social Vulnerability and Low-Income, Low-Access Status"
 type: software
 authors:
   - family-names: "Ganatra"
@@ -8,4 +8,13 @@ authors:
     affiliation: "Michael E. DeBakey High School for Health Professions, Houston, Texas, USA"
 repository-code: "https://github.com/ynganatra/houston-census-tract-analysis"
 license: "MIT"
-date-released: 2026-03-28
+date-released: "2026-03-28"
+keywords:
+  - "diabetes"
+  - "obesity"
+  - "social vulnerability"
+  - "low-income low-access"
+  - "LILA"
+  - "spatial analysis"
+  - "Greater Houston"
+  - "census tracts"
