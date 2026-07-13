@@ -1,20 +1,28 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the associated manuscript."
-title: "Overlapping Diabetes and Obesity Burden in Greater Houston Was Associated With Social Vulnerability and Low-Income, Low-Access Status"
+message: "If you use this software, please cite this repository and the associated manuscript."
+title: "Tract-Level Combined Diabetes-Obesity Burden in Greater Houston: Clustering, Vulnerability, and Low-Income Status"
 type: software
+
 authors:
   - family-names: "Ganatra"
     given-names: "Yash Nirmal"
     affiliation: "Michael E. DeBakey High School for Health Professions, Houston, Texas, USA"
+
 repository-code: "https://github.com/ynganatra/houston-census-tract-analysis"
+url: "https://github.com/ynganatra/houston-census-tract-analysis"
 license: "MIT"
-date-released: "2026-03-28"
+
 keywords:
   - "diabetes"
   - "obesity"
+  - "combined diabetes-obesity burden"
   - "social vulnerability"
-  - "low-income low-access"
+  - "low-income"
+  - "low-access"
   - "LILA"
+  - "spatial epidemiology"
   - "spatial analysis"
-  - "Greater Houston"
   - "census tracts"
+  - "Greater Houston"
+  - "Python"
+  - "Jupyter Notebook"
