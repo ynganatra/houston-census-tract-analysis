@@ -1,59 +1,70 @@
-# Overlapping Diabetes and Obesity Burden in Greater Houston
+# Tract-Level Combined Diabetes-Obesity Burden in Greater Houston
 
-This repository contains the Google Colab notebook used for the tract-level analysis in the study:
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ynganatra/houston-census-tract-analysis/blob/main/Houston_Census_Tract_Analysis.ipynb)
 
-**"Overlapping Diabetes and Obesity Burden in Greater Houston Was Associated With Social Vulnerability and Low-Income, Low-Access Status."**
+This repository contains the Python and Google Colab code used for the tract-level analysis in the manuscript:
 
-## Repository contents
+**“Tract-Level Combined Diabetes-Obesity Burden in Greater Houston: Clustering, Vulnerability, and Low-Income Status.”**
 
-* `Houston_Census_Tract_Analysis.ipynb`
-  Main notebook for data preprocessing, tract harmonization, spatial analysis, statistical testing, sensitivity analysis, and figure generation.
+**Publication status:** Accepted for publication in the National High School Journal of Science (NHSJS). The final journal citation and DOI will be added after publication.
 
-* `requirements.txt`
-  Python packages used in the notebook.
+## Repository Contents
 
-* `CITATION.cff`
-  Citation metadata for this repository.
+- `Houston_Census_Tract_Analysis.ipynb` — Main analysis notebook for data preparation, census tract harmonization, statistical testing, spatial analysis, sensitivity analysis, and figure generation.
+- `requirements.txt` — Python packages required to run the analysis.
+- `CITATION.cff` — Citation metadata for this repository.
+- `LICENSE` — MIT License.
+- `.gitignore` — Files and folders excluded from version control.
 
-## Study overview
+## Study Overview
 
-This notebook integrates publicly available tract-level datasets for Greater Houston and performs the analysis used to:
+This ecological, cross-sectional study examined modeled diabetes and obesity burden across census tracts in the ten-county Houston-Pasadena-The Woodlands Metropolitan Statistical Area, referred to in the manuscript as Greater Houston.
 
-* identify high diabetes burden tracts
-* identify high obesity burden tracts
-* define diabetes-obesity high-burden overlap tracts
-* evaluate association with Social Vulnerability Index (SVI)
-* evaluate association with Low-Income, Low-Access (LILA) tract status
-* assess overall spatial clustering using Global Moran’s I
-* identify local high clusters using Getis-Ord Gi*
-* apply False Discovery Rate (FDR) adjustment as a sensitivity check for local cluster results
-* perform threshold sensitivity analysis using 75th-, 80th-, and 85th-percentile cutoffs
-* generate the manuscript figures and summary tables
+The primary measure was a continuous combined diabetes-obesity score. Diabetes and obesity prevalence estimates were standardized separately using z-scores, averaged with equal weighting, and linearly rescaled to a 0-to-1 range.
 
-## Data sources
+A secondary high-burden overlap analysis tested whether tracts with high estimated diabetes prevalence and high estimated obesity prevalence appeared together more often than expected under independence.
 
-The analysis uses publicly available government datasets referenced in the manuscript, including:
+The study also examined relationships between the continuous combined score and:
 
-* CDC PLACES 2025
-* CDC/ATSDR Social Vulnerability Index 2022
-* USDA Food Access Research Atlas
-* U.S. Census tract relationship files
-* U.S. Census TIGER/Line tract boundary files
+- Social Vulnerability Index (SVI) percentile
+- USDA low-income tract status
+- USDA low-access tract status
+- USDA Low-Income, Low-Access (LILA) tract status
+- neighboring tract conditions
+- global and local spatial clustering
 
-## Study area
+## Study Area
 
-The study covers the nine-county Greater Houston metropolitan statistical area:
+The study included the following ten Greater Houston counties:
 
-* Austin
-* Brazoria
-* Chambers
-* Fort Bend
-* Galveston
-* Harris
-* Liberty
-* Montgomery
-* Waller
+- Austin
+- Brazoria
+- Chambers
+- Fort Bend
+- Galveston
+- Harris
+- Liberty
+- Montgomery
+- San Jacinto
+- Waller
 
-## License
+The final analysis included 1,069 census tracts.
 
-This repository is released under the MIT License.
+## Data Sources
+
+The analysis used publicly available government datasets:
+
+- CDC PLACES 2025 census tract data
+- CDC/ATSDR Social Vulnerability Index 2022
+- USDA Food Access Research Atlas 2019
+- U.S. Census Bureau 2020 Census Tract to 2010 Census Tract Relationship File
+- U.S. Census Bureau TIGER/Line census tract boundary files
+
+CDC PLACES health estimates and SVI percentile values were harmonized from 2020 census tracts to 2010 census tracts using area-based crosswalk weights. The harmonized variables were then merged with the USDA indicators and 2010 census tract boundaries.
+
+## Continuous Combined Diabetes-Obesity Score
+
+For each census tract, diabetes and obesity prevalence estimates were standardized separately:
+
+```text
+z = (X - mean) / standard deviation
