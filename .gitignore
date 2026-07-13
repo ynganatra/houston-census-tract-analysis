@@ -34,7 +34,7 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Unit test and coverage reports
 htmlcov/
 .tox/
 .nox/
@@ -73,13 +73,13 @@ venv.bak/
 # Local Python version files
 .python-version
 
-# Package manager local/build files
+# Package-manager local and build files
 .pdm-python
 .pdm-build/
 .pixi/
 __pypackages__/
 
-# Type checker and linter caches
+# Type-checker and linter caches
 .mypy_cache/
 .dmypy.json
 dmypy.json
@@ -90,7 +90,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# IDE/editor files
+# IDE and editor files
 .vscode/
 .idea/
 .spyderproject
@@ -100,7 +100,7 @@ cython_debug/
 .cursorindexingignore
 tempCodeRunnerFile.py
 
-# OS files
+# Operating-system files
 .DS_Store
 Thumbs.db
 
@@ -160,12 +160,12 @@ Houston_Census_Tract_Output_Manifest.csv
 *.sbx
 *.geojson
 
-# Generated figure/export files
+# Generated figure and document exports
 *.png
 *.svg
 *.pdf
 
-# Temporary/archive files
+# Temporary and archive files
 *.tmp
 *.bak
 *.zip
