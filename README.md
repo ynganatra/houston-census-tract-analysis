@@ -266,7 +266,7 @@ The notebook generates or supports the following manuscript materials:
 
 ## Reproducibility
 
-The analysis was developed in Python and can be run in Google Colab or another compatible Python environment.
+The analysis was developed in Python and is designed to run in Google Colab.
 
 Install the required packages using:
 
